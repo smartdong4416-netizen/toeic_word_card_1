@@ -1,0 +1,124 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh; /* ⭐ 必加 */
+
+    background:#f5f7fb;
+    font-family:"Microsoft JhengHei",sans-serif;
+}
+
+#left_area{
+    width: 250px;
+}
+
+#input_area{
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+
+    align-items: center;
+    justify-content: space-evenly;
+    
+  
+
+    border: 4px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    gap: 10px;
+}
+
+#score_area{
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 400px;
+    left: 20px;
+    width: 250px;
+
+    align-items: center;
+    justify-content: space-evenly;
+    
+    border: 4px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
+    gap: 10px;
+}
+
+#main_container{
+    height: 80%;
+    width: 55%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border: 5px solid;
+    border-radius: 20px;
+}
+
+#question{
+    height: 25%;
+    width: 50%;
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+
+    border: 2px solid;
+    border-radius: 5px;
+
+    padding:20px;
+    margin: 20px;
+
+    font-size: 48px;
+}
+
+#btn_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* ⭐ 關鍵 */
+    gap: 20px;
+
+    height: 40%;
+    width: 80%;
+
+    border: 5px solid;
+    border-radius: 20px;
+
+    padding:20px;
+}
+
+.btn{
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+
+    border: 2px solid;
+    border-radius: 5px;
+
+    font-size: 36px;
+
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #e0e7ff;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}

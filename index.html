@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <!-- jQuery v1.9.1 -->
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <!-- toastr v2.1.4 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet"  />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js"></script>
+</head>
+<body>
+    <div id="left_area">
+        <div id="input_area">
+            <label>英文</label>
+            <input id="input_en" autocomplete="off">
+            <label>中文</label>
+            <input id="input_ch" autocomplete="off">
+            <button id="save_btn">儲存</button>
+            <button id="test_btn">開始測試</button>
+            <input type="file" id="file_input" accept=".txt,.csv">
+            <button id="import_btn">匯入單字</button>
+        </div>
+        <div id="score_area">
+            <label>正確</label>
+            <div id="correct">0</div>
+            <label>錯誤</label>
+            <div id="wrong">0</div>
+            <label>已載入單字數 : </label>
+            <div id="word_num">0</div>
+        </div>
+    </div>
+
+    <div id="main_container">
+        <div id="question">question</div>
+        <div id="btn_container">
+            <div id="btn_a" class="btn">A</div>
+            <div id="btn_b" class="btn">B</div>
+            <div id="btn_c" class="btn">C</div>
+            <div id="btn_d" class="btn">D</div>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
