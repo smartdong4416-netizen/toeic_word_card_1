@@ -120,3 +120,7 @@ body{
 .btn:active{
     transform: scale(0.95);
 }
+
+#file_input{
+    display: none;
+}
