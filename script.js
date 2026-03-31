@@ -206,3 +206,7 @@ toastr.options = {
 //toastr.warning( "Warning" );
 //toastr.error( "Error" ); 
 
+
+document.getElementById("select_file_input").addEventListener("click", () => {
+    document.getElementById("file_input").click();
+});
